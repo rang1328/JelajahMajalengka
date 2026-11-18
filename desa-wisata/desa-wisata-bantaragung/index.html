@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informasi kunjungan, fasilitas, peta, dan galeri Desa Wisata Bantaragung di Kabupaten Majalengka.">
+  <meta name="theme-color" content="#f7f5ee">
+  <title>Desa Wisata Bantaragung — Jelajah Majalengka</title>
+  <link rel="icon" href="../../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/detail.css">
+  <script defer src="../../assets/js/galeri-wisata.js"></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="detail-logo" viewBox="0 0 32 32"><path d="M4 23c5-1 9-6 12-13 3 7 7 12 12 13M4 27c6-1 10-4 12-7 2 3 6 6 12 7M22 8h.01"/></symbol>
+    <symbol id="detail-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="detail-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="detail-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="detail-ticket" viewBox="0 0 24 24"><path d="M3 7h18v3a2 2 0 1 0 0 4v3H3v-3a2 2 0 1 0 0-4V7Zm12 0v2m0 2v2m0 2v2"/></symbol>
+    <symbol id="detail-parkir" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h3.5a2.5 2.5 0 0 1 0 5H9"/></symbol>
+    <symbol id="detail-toilet" viewBox="0 0 24 24"><circle cx="7.5" cy="5" r="1.5"/><circle cx="16.5" cy="5" r="1.5"/><path d="M4 13v-2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2M7.5 12v8m9-8v8m-4-5 2-6h4l2 6h-8"/></symbol>
+    <symbol id="detail-musala" viewBox="0 0 24 24"><path d="M4 21V11h16v10H4Zm3-10c0-3 2-4 5-7 3 3 5 4 5 7m-7 10v-4a2 2 0 0 1 4 0v4M12 4V2"/></symbol>
+    <symbol id="detail-food" viewBox="0 0 24 24"><path d="M4 3v5a3 3 0 0 0 6 0V3M7 3v18m11 0V3c-2 1-4 4-4 7v3h4"/></symbol>
+    <symbol id="detail-shelter" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7H3Zm3 0v9m12-9v9M3 20h18m-11-5h4"/></symbol>
+    <symbol id="detail-wifi" viewBox="0 0 24 24"><path d="M3 8a15 15 0 0 1 18 0M6 12a10 10 0 0 1 12 0m-9 4a5 5 0 0 1 6 0m-3 4h.01"/></symbol>
+    <symbol id="detail-leaf" viewBox="0 0 24 24"><path d="M20 4c-8 0-14 3-14 9a5 5 0 0 0 5 5c6 0 9-6 9-14ZM4 21c3-4 6-7 10-10"/></symbol>
+    <symbol id="detail-gallery-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../index.html" aria-label="Jelajah Majalengka, Beranda">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#detail-logo"/></svg></span>
+        <span>Jelajah <strong>Majalengka</strong></span>
+      </a>
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <a href="../../index.html">Beranda</a>
+        <a href="../../index.html#destinasi">Destinasi</a>
+        <a href="../../index.html#kategori">Kategori</a>
+        <a href="../../index.html#panduan">Panduan</a>
+        <a href="../../index.html#tentang">Tentang</a>
+      </nav>
+      <a class="action action-header" href="#lokasi">Lihat peta <svg class="icon" aria-hidden="true"><use href="#detail-arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main class="container detail-page" id="konten" tabindex="-1">
+    <nav class="detail-breadcrumb" aria-label="Jejak navigasi">
+      <ol>
+        <li><a href="../../index.html">Beranda</a></li>
+        <li><a href="../../index.html#destinasi">Destinasi</a></li>
+        <li aria-current="page">Desa Wisata Bantaragung</li>
+      </ol>
+    </nav>
+
+    <header class="detail-masthead">
+      <div class="detail-heading">
+        <p class="eyebrow">Desa wisata</p>
+        <h1>Desa Wisata Bantaragung</h1>
+        <p class="detail-place"><svg class="icon" aria-hidden="true"><use href="#detail-pin"/></svg> Desa Bantaragung, Kecamatan Sindangwangi, Kabupaten Majalengka</p>
+      </div>
+      <section class="detail-gallery" aria-label="Galeri foto">
+        <div class="gallery-track" id="foto-wisata" tabindex="0" aria-label="Foto destinasi">
+          <figure class="detail-photo">
+            <img src="../../assets/images/ciboer-kartu.jpg" alt="Hamparan sawah terasering Ciboer di pagi hari" fetchpriority="high">
+            <figcaption>Terasering Ciboer · <a href="https://commons.wikimedia.org/wiki/File:Pagi_Di_Ciboer_Chandra_Musliminnata.jpg">Masmusdjeprat</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+          <figure class="detail-photo">
+            <img src="../../assets/images/galeri/bantaragung-sawah.jpg" alt="Petani di tengah hamparan sawah Bantaragung" fetchpriority="low" decoding="async">
+            <figcaption>Persawahan Bantaragung · <a href="https://commons.wikimedia.org/wiki/File:Indahnya_Sawah_Indonesia.jpg">Ganjarmustika1904</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+          </figure>
+        </div>
+        <div class="gallery-controls" hidden>
+          <button type="button" data-previous aria-controls="foto-wisata" aria-label="Foto sebelumnya"><svg class="icon" aria-hidden="true"><use href="#detail-gallery-arrow"/></svg></button>
+          <output aria-live="polite">1 dari 2</output>
+          <button type="button" data-next aria-controls="foto-wisata" aria-label="Foto berikutnya"><svg class="icon" aria-hidden="true"><use href="#detail-gallery-arrow"/></svg></button>
+        </div>
+      </section>
+    </header>
+
+    <div class="row detail-row">
+      <div class="col-12 lg:col-7">
+        <section class="detail-section" aria-labelledby="tentang-destinasi">
+          <h2 id="tentang-destinasi">Tentang destinasi</h2>
+          <p class="detail-description">Bantaragung punya persawahan terasering Ciboer, Curug Cipeuteuy, dan kegiatan yang dikelola warga. Pilih atraksi yang ingin dikunjungi atau hubungi pengelola untuk mengatur paket wisata desa.</p>
+        </section>
+
+        <section class="detail-section" aria-labelledby="fasilitas">
+          <h2 id="fasilitas">Fasilitas</h2>
+          <ul class="facility-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-parkir"/></svg> Area parkir</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-toilet"/></svg> Kamar mandi</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-musala"/></svg> Musala</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-food"/></svg> Kuliner lokal</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-wifi"/></svg> Area Wi-Fi</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#detail-shelter"/></svg> Balai pertemuan</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-12 lg:col-5">
+        <section class="visit-panel detail-section" aria-labelledby="kunjungan">
+          <h2 id="kunjungan">Informasi kunjungan</h2>
+          <dl>
+            <div>
+              <dt><svg class="icon" aria-hidden="true"><use href="#detail-clock"/></svg> Jam buka dan layanan</dt>
+              <dd>Jadwal mengikuti atraksi dan paket. <a href="tel:+6281384990974">Hubungi pengelola desa</a> untuk reservasi.</dd>
+            </div>
+            <div>
+              <dt><svg class="icon" aria-hidden="true"><use href="#detail-ticket"/></svg> Harga</dt>
+              <dd>Paket Desa Wisata mulai dari Rp100.000 menurut JADESTA. Atraksi dan paket lain memiliki tarif masing-masing.</dd>
+            </div>
+          </dl>
+          <section class="detail-location" id="lokasi" aria-labelledby="judul-lokasi">
+            <h3 id="judul-lokasi"><svg class="icon" aria-hidden="true"><use href="#detail-pin"/></svg> Lokasi</h3>
+            <iframe title="Google Maps untuk Desa Wisata Bantaragung" src="https://www.google.com/maps?q=Desa%20Wisata%20Bantaragung%20Sindangwangi%20Majalengka&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <a class="detail-link" href="https://www.google.com/maps/search/?api=1&amp;query=Desa%20Wisata%20Bantaragung%20Sindangwangi%20Majalengka">Buka di Google Maps <svg class="icon" aria-hidden="true"><use href="#detail-arrow"/></svg></a>
+          </section>
+        </section>
+      </div>
+    </div>
+    <section class="detail-related"><h2>Lanjut jelajah Bantaragung</h2><ul><li><a href="../../curug/curug-cipeuteuy/index.html">Curug Cipeuteuy</a></li><li><a href="https://jadesta.kemenpar.go.id/desa/57675">Terasering Ciboer di profil JADESTA</a></li></ul></section>
+  </main>
+
+  <footer class="site-footer detail-footer">
+    <section class="detail-care" aria-labelledby="jaga-kawasan">
+      <div class="container detail-care-inner">
+        <h2 id="jaga-kawasan"><svg class="icon" aria-hidden="true"><use href="#detail-leaf"/></svg> Jaga kawasan ini</h2>
+        <p>Minta izin sebelum memasuki kebun atau memotret warga. Gunakan jalur yang ditunjukkan pemandu saat menyusuri sawah.</p>
+      </div>
+    </section>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="../../index.html">
+          <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#detail-logo"/></svg></span>
+          <span>Jelajah <strong>Majalengka</strong></span>
+        </a>
+        <p>Proyek EcoDigital for Environment.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../../index.html#destinasi">Kembali ke daftar destinasi</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

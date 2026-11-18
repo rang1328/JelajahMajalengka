@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panduan wisata Majalengka. Temukan situ, bukit, curug, terasering, dan taman kota beserta cara menjaga kawasannya.">
+  <meta name="theme-color" content="#f7f5ee">
+  <title>Jelajah Majalengka — Panduan wisata bertanggung jawab</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/beranda.js" defer></script>
+</head>
+<body id="beranda">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-logo" viewBox="0 0 32 32"><path d="M4 23c5-1 9-6 12-13 3 7 7 12 12 13M4 27c6-1 10-4 12-7 2 3 6 6 12 7M22 8h.01"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></symbol>
+    <symbol id="i-curug" viewBox="0 0 24 24"><path d="M5 4h7v4h5v8M8 7v5m4-1v5M2 19c1.7-1.4 3.3-1.4 5 0s3.3 1.4 5 0 3.3-1.4 5 0 3.3 1.4 5 0"/></symbol>
+    <symbol id="i-teras" viewBox="0 0 24 24"><path d="M3 20c5.5 0 8-2 8-5s2.5-5 10-5M3 15c2.7 0 4-1 4-3 0-4 4-7 14-7M13 20c2-1 3-2 3-4 0-1.4 2-2 5-2"/></symbol>
+    <symbol id="i-bukit" viewBox="0 0 24 24"><path d="m2 20 7-11 4 6 3-5 6 10H2Z"/><circle cx="16.5" cy="5.5" r="2"/></symbol>
+    <symbol id="i-taman" viewBox="0 0 24 24"><path d="M12 22v-7m0 1c-2 2-7 1-7-2 0-1.8 1.2-3 2.5-3.3A5 5 0 0 1 12 3a5 5 0 0 1 4.5 7.7c1.3.3 2.5 1.5 2.5 3.3 0 3-5 4-7 2Z"/></symbol>
+    <symbol id="i-desa" viewBox="0 0 24 24"><path d="m2 11 7-6 7 6m-12 0v9h10v-9m-7 9v-5h4v5m5-11 2-2 4 4m-2 1v8h-3"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-8 0-14 3-14 9a5 5 0 0 0 5 5c6 0 9-6 9-14ZM4 21c3-4 6-7 10-10"/></symbol>
+    <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 3h4m-4 1v4l-3 3v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-8l-3-3V4M7 13h10m-10 4h10"/></symbol>
+    <symbol id="i-trail" viewBox="0 0 24 24"><path d="M5 20c8 0 12-2 12-5 0-2-3-3-6-4-2-.7-3-1.5-3-3 0-2 3-4 8-4M4 20h.01M20 4h.01"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14m-7-7v14"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Jelajah Majalengka, Beranda">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg></span>
+        <span>Jelajah <strong>Majalengka</strong></span>
+      </a>
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <a href="#beranda" aria-current="page">Beranda</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#panduan">Panduan</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+      <a class="action action-header" href="#pencarian" data-focus-search>Cari destinasi <svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+    </div>
+  </header>
+
+  <main id="konten" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/images/panyaweuyan-panorama.jpg" srcset="assets/images/panyaweuyan-panorama-small.jpg 840w, assets/images/panyaweuyan-panorama.jpg 1680w" sizes="(max-width: 767px) 100vw, 75vw" width="1680" height="1260" alt="Lembah Panyaweuyan dengan lahan pertanian berundak dan pegunungan di kejauhan" fetchpriority="high">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow hero-kicker"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg> Majalengka, Jawa Barat</p>
+          <h1 id="hero-title">Jelajahi Majalengka,<br><em>jaga alamnya.</em></h1>
+          <p class="hero-copy">Cari curug, situ, atau kebun berundak buat akhir pekanmu. Cek jam buka, tiket, dan cara berkunjung sebelum berangkat.</p>
+          <div class="hero-actions">
+            <a class="action action-primary" href="#pencarian" data-focus-search>Cari tempat wisata <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="hero-guide" href="#panduan">Baca panduan berkunjung</a>
+          </div>
+        </div>
+        <a class="photo-location" href="#terasering-panyaweuyan"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Terasering Panyaweuyan, Argapura</a>
+      </div>
+    </section>
+
+    <div class="container search-wrap" id="pencarian" hidden>
+      <form class="destination-tools" id="destination-tools" role="search" aria-label="Cari destinasi">
+        <label class="search-field" for="destination-search">
+          <span>Nama atau lokasi</span>
+          <span class="search-input"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input id="destination-search" type="search" placeholder="Contoh: Panyaweuyan atau Argapura" autocomplete="off"></span>
+        </label>
+        <label class="search-field search-category" for="destination-category">
+          <span>Kategori wisata</span>
+          <span class="search-input"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><select id="destination-category">
+            <option value="semua">Semua kategori</option>
+            <option value="situ">Situ</option>
+            <option value="bukit">Bukit</option>
+            <option value="curug">Curug</option>
+            <option value="terasering">Terasering</option>
+            <option value="taman-kota">Taman kota</option>
+          </select><svg class="icon select-chevron" aria-hidden="true"><use href="#i-chevron"/></svg></span>
+        </label>
+        <button class="action action-primary" type="submit">Cari destinasi <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+
+    <section id="kategori" class="section category-section container" aria-labelledby="category-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Kategori wisata</p><h2 id="category-title">Mau ke mana hari ini?</h2></div>
+        <p>Pilih suasana yang ingin kamu temui.</p>
+      </div>
+      <ul class="category-grid" aria-label="Kategori wisata">
+        <li><a class="category-card" href="#situ-cipanten" data-category-link="situ"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg></span><span>Situ</span><svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+        <li><a class="category-card" href="#bukit-sanghyang-dora" data-category-link="bukit"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg></span><span>Bukit</span><svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+        <li><a class="category-card" href="#curug-cipeuteuy" data-category-link="curug"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg></span><span>Curug</span><svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+        <li><a class="category-card" href="#terasering-panyaweuyan" data-category-link="terasering"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-teras"/></svg></span><span>Terasering</span><svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+        <li><a class="category-card" href="#alun-alun-majalengka" data-category-link="taman-kota"><span class="category-icon"><svg class="icon" aria-hidden="true"><use href="#i-taman"/></svg></span><span>Taman kota</span><svg class="icon" aria-hidden="true"><use href="#i-up-right"/></svg></a></li>
+      </ul>
+    </section>
+
+    <section class="section destination-section" id="destinasi" aria-labelledby="destination-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Jelajah destinasi</p><h2 id="destination-title" tabindex="-1">Cari tempat buat dikunjungi</h2></div>
+          <p>Lihat lokasinya, pilih suasananya, lalu cek info sebelum berangkat.</p>
+        </div>
+        <div class="result-toolbar" id="destination-controls" hidden>
+          <p id="destination-status" class="result-count" role="status"></p>
+          <div class="result-actions">
+            <button id="show-all" class="text-button" type="button" hidden>Lihat semua destinasi</button>
+            <button id="clear-filters" class="text-button" type="button" hidden>Hapus filter</button>
+            <a href="#pencarian" class="text-button" id="edit-search">Ubah pencarian</a>
+          </div>
+        </div>
+        <div id="destination-empty" class="empty-state" hidden>
+          <p>Belum ketemu. Coba nama tempat lain atau lihat semua kategori.</p>
+        </div>
+        <div class="row destination-grid">
+          <article id="situ-cipanten" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Cipanten Gunung Kuning, Sindang " data-featured>
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Gunung Kuning, Sindang</p>
+                <h3><a data-detail-link href="situ/situ-cipanten/index.html">Situ Cipanten</a></h3>
+                
+                <p>Duduk santai di tepi situ sambil melihat warna air dan pepohonan.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-cipanten/index.html" aria-label="Lihat detail Situ Cipanten">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="bukit-sanghyang-dora" class="col-12 md:col-6 lg:col-4 destination-item" data-category="bukit" data-search="Bukit Sanghyang Dora Desa Leuwikujang, Leuwimunding Camping" data-featured>
+            <div class="destination-card">
+              <div class="card-media card-art art-hill"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><span class="tag">Bukit</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Leuwikujang, Leuwimunding</p>
+                <h3><a data-detail-link href="bukit/bukit-sanghyang-dora/index.html">Bukit Sanghyang Dora</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Naik ke bukit untuk menikmati panorama atau bermalam di area kemah.</p>
+                <a class="destination-detail" data-detail-link href="bukit/bukit-sanghyang-dora/index.html" aria-label="Lihat detail Bukit Sanghyang Dora">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="curug-muara-jaya" class="col-12 md:col-6 lg:col-4 destination-item" data-category="curug" data-search="Curug Muara Jaya Kampung Apuy, Desa Argamukti, Argapura " data-featured>
+            <div class="destination-card">
+              <div class="card-media"><img src="assets/images/galeri/muara-jaya-1.jpg" alt="Air terjun Curug Muara Jaya" loading="lazy" decoding="async"><span class="tag">Curug</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Kampung Apuy, Desa Argamukti, Argapura</p>
+                <h3><a data-detail-link href="curug/curug-muara-jaya/index.html">Curug Muara Jaya</a></h3>
+                
+                <p>Dengar gemuruh air terjun bertingkat dan mampir ke saung di kaki Gunung Ciremai.</p>
+                <a class="destination-detail" data-detail-link href="curug/curug-muara-jaya/index.html" aria-label="Lihat detail Curug Muara Jaya">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="curug-cipeuteuy" class="col-12 md:col-6 lg:col-4 destination-item" data-category="curug" data-search="Curug Cipeuteuy Desa Bantaragung, Sindangwangi Camping" data-featured>
+            <div class="destination-card">
+              <div class="card-media"><img src="assets/images/galeri/cipeuteuy-1.jpg" alt="Kolam berundak Curug Cipeuteuy" loading="lazy" decoding="async"><span class="tag">Curug</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Bantaragung, Sindangwangi</p>
+                <h3><a data-detail-link href="curug/curug-cipeuteuy/index.html">Curug Cipeuteuy</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Lihat air terjun dan kolam berundak di Bantaragung. Kalau ingin bermalam, tanyakan paket kemahnya.</p>
+                <a class="destination-detail" data-detail-link href="curug/curug-cipeuteuy/index.html" aria-label="Lihat detail Curug Cipeuteuy">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="terasering-panyaweuyan" class="col-12 md:col-6 lg:col-4 destination-item" data-category="terasering" data-search="Terasering Panyaweuyan Argapura " data-featured>
+            <div class="destination-card">
+              <div class="card-media"><img src="assets/images/panyaweuyan-kartu.jpg" alt="Petak tanaman di Panyaweuyan" loading="lazy" decoding="async"><span class="tag">Terasering</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Argapura</p>
+                <h3><a data-detail-link href="terasering/terasering-panyaweuyan/index.html">Terasering Panyaweuyan</a></h3>
+                
+                <p>Lihat petak kebun sayur mengikuti lekuk lereng. Pemandangannya berubah mengikuti musim tanam.</p>
+                <a class="destination-detail" data-detail-link href="terasering/terasering-panyaweuyan/index.html" aria-label="Lihat detail Terasering Panyaweuyan">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="alun-alun-majalengka" class="col-12 md:col-6 lg:col-4 destination-item" data-category="taman-kota" data-search="Alun-Alun Majalengka Majalengka Kulon, Kecamatan Majalengka " data-featured>
+            <div class="destination-card">
+              <div class="card-media"><img src="assets/images/galeri/alun-alun-2014.png" alt="Foto arsip Alun-Alun Majalengka tahun 2014" loading="lazy" decoding="async"><span class="tag">Taman kota</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Majalengka Kulon, Kecamatan Majalengka</p>
+                <h3><a data-detail-link href="taman-kota/alun-alun-majalengka/index.html">Alun-Alun Majalengka</a></h3>
+                
+                <p>Mampir sore untuk jalan santai, duduk di bangku taman, atau jajan di sekitar alun-alun.</p>
+                <a class="destination-detail" data-detail-link href="taman-kota/alun-alun-majalengka/index.html" aria-label="Lihat detail Alun-Alun Majalengka">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="situ-ciranca" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Ciranca Desa Teja, Rajagaluh Camping">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Teja, Rajagaluh</p>
+                <h3><a data-detail-link href="situ/situ-ciranca/index.html">Situ Ciranca</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Piknik di bawah pepohonan atau duduk santai di tepi situ.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-ciranca/index.html" aria-label="Lihat detail Situ Ciranca">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="situ-sangiang" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Sangiang Desa Sangiang, Banjaran ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Sangiang, Banjaran</p>
+                <h3><a data-detail-link href="situ/situ-sangiang/index.html">Situ Sangiang</a></h3>
+                
+                <p>Singgah di tepi situ dan nikmati suasana pepohonannya.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-sangiang/index.html" aria-label="Lihat detail Situ Sangiang">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="situ-cipadung" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Cipadung Desa Pajajar, Rajagaluh ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Pajajar, Rajagaluh</p>
+                <h3><a data-detail-link href="situ/situ-cipadung/index.html">Situ Cipadung</a></h3>
+                
+                <p>Jalan santai di sekitar situ di kawasan wisata Prabu Siliwangi.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-cipadung/index.html" aria-label="Lihat detail Situ Cipadung">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="situ-janawi" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Janawi Desa Payung ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Payung</p>
+                <h3><a data-detail-link href="situ/situ-janawi/index.html">Situ Janawi</a></h3>
+                
+                <p>Cari suasana tenang dengan singgah di tepi Situ Janawi.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-janawi/index.html" aria-label="Lihat detail Situ Janawi">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="situ-cikuda" class="col-12 md:col-6 lg:col-4 destination-item" data-category="situ" data-search="Situ Cikuda Desa Padaherang ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Situ</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Padaherang</p>
+                <h3><a data-detail-link href="situ/situ-cikuda/index.html">Situ Cikuda</a></h3>
+                
+                <p>Ambil jeda dan nikmati suasana di tepi Situ Cikuda.</p>
+                <a class="destination-detail" data-detail-link href="situ/situ-cikuda/index.html" aria-label="Lihat detail Situ Cikuda">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="bukit-pamoroan" class="col-12 md:col-6 lg:col-4 destination-item" data-category="bukit" data-search="Bukit Pamoroan Desa Sedareja, Cingambul Camping">
+            <div class="destination-card">
+              <div class="card-media card-art art-hill"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><span class="tag">Bukit</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Sedareja, Cingambul</p>
+                <h3><a data-detail-link href="bukit/bukit-pamoroan/index.html">Bukit Pamoroan</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Pilih jalan pagi sambil menikmati panorama atau bawa tenda untuk bermalam.</p>
+                <a class="destination-detail" data-detail-link href="bukit/bukit-pamoroan/index.html" aria-label="Lihat detail Bukit Pamoroan">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="bukit-cawene-geulis" class="col-12 md:col-6 lg:col-4 destination-item" data-category="bukit" data-search="Bukit Cawene Geulis Sadarehe, Desa Payung, Rajagaluh Camping">
+            <div class="destination-card">
+              <div class="card-media card-art art-hill"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><span class="tag">Bukit</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Sadarehe, Desa Payung, Rajagaluh</p>
+                <h3><a data-detail-link href="bukit/bukit-cawene-geulis/index.html">Bukit Cawene Geulis</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Susuri jalan setapak menuju bukit lewat kawasan Sadarehe.</p>
+                <a class="destination-detail" data-detail-link href="bukit/bukit-cawene-geulis/index.html" aria-label="Lihat detail Bukit Cawene Geulis">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="bukit-kanaga" class="col-12 md:col-6 lg:col-4 destination-item" data-category="bukit" data-search="Bukit Kanaga (Kanaga Hill) Ciinjuk, Desa Cipulus, Cikijing Camping">
+            <div class="destination-card">
+              <div class="card-media card-art art-hill"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><span class="tag">Bukit</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Ciinjuk, Desa Cipulus, Cikijing</p>
+                <h3><a data-detail-link href="bukit/bukit-kanaga/index.html">Bukit Kanaga (Kanaga Hill)</a></h3>
+                <span class="activity-tag">Camping</span>
+                <p>Nikmati pemandangan dari bukit dan tanya pengelola kalau ingin bermalam.</p>
+                <a class="destination-detail" data-detail-link href="bukit/bukit-kanaga/index.html" aria-label="Lihat detail Bukit Kanaga (Kanaga Hill)">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="gunung-ciremai" class="col-12 md:col-6 lg:col-4 destination-item" data-category="bukit" data-search="Gunung Ciremai Jalur Apuy dan Sadarehe, Majalengka Pendakian gunung">
+            <div class="destination-card">
+              <div class="card-media card-art art-hill"><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg><span class="tag">Bukit</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Jalur Apuy dan Sadarehe, Majalengka</p>
+                <h3><a data-detail-link href="bukit/gunung-ciremai/index.html">Gunung Ciremai</a></h3>
+                <span class="activity-tag">Pendakian gunung</span>
+                <p>Kenali jalur pendakian dari Majalengka dan cek pengumuman taman nasional sebelum menyusun rencana.</p>
+                <a class="destination-detail" data-detail-link href="bukit/gunung-ciremai/index.html" aria-label="Lihat detail Gunung Ciremai">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="curug-kapak-kuda" class="col-12 md:col-6 lg:col-4 destination-item" data-category="curug" data-search="Curug Kapak Kuda Dusun Tapak Kuda, Desa Sadawangi, Lemahsugih  Tapak Kuda Citerus">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Curug</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Dusun Tapak Kuda, Desa Sadawangi, Lemahsugih</p>
+                <h3><a data-detail-link href="curug/curug-kapak-kuda/index.html">Curug Kapak Kuda</a></h3>
+                
+                <p>Kenali curug bertingkat yang juga disebut Curug Tapak Kuda atau Curug Citerus.</p>
+                <a class="destination-detail" data-detail-link href="curug/curug-kapak-kuda/index.html" aria-label="Lihat detail Curug Kapak Kuda">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="curug-ibun-pelangi" class="col-12 md:col-6 lg:col-4 destination-item" data-category="curug" data-search="Curug Ibun Pelangi Argapura ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Curug</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Argapura</p>
+                <h3><a data-detail-link href="curug/curug-ibun-pelangi/index.html">Curug Ibun Pelangi</a></h3>
+                
+                <p>Lihat air terjun dari jalur pengunjung. Saat cahaya pas, bias air bisa membentuk pelangi.</p>
+                <a class="destination-detail" data-detail-link href="curug/curug-ibun-pelangi/index.html" aria-label="Lihat detail Curug Ibun Pelangi">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+          <article id="curug-kiara-danu" class="col-12 md:col-6 lg:col-4 destination-item" data-category="curug" data-search="Curug Kiara Danu Desa Lengkong Kulon, Sindangwangi ">
+            <div class="destination-card">
+              <div class="card-media card-art art-water"><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg><span class="tag">Curug</span></div>
+              <div class="card-content">
+                <p class="card-place"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Desa Lengkong Kulon, Sindangwangi</p>
+                <h3><a data-detail-link href="curug/curug-kiara-danu/index.html">Curug Kiara Danu</a></h3>
+                
+                <p>Berenang sambil melihat hamparan sawah atau duduk santai di saung.</p>
+                <a class="destination-detail" data-detail-link href="curug/curug-kiara-danu/index.html" aria-label="Lihat detail Curug Kiara Danu">Lihat detail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container overview-section" id="tentang" aria-labelledby="overview-title">
+      <div class="overview">
+        <div class="overview-content">
+          <p class="eyebrow">Selayang pandang</p>
+          <h2 id="overview-title">Dari lereng Ciremai<br>ke ruang hijau kota.</h2>
+          <p>Di Argapura, kebun mengikuti lekuk lereng. Di Sindangwangi, kamu bisa singgah di curug dan melihat persawahan. Di pusat Majalengka, ada ruang terbuka buat jalan sore.</p>
+          <a class="action action-primary" href="desa-wisata/desa-wisata-bantaragung/index.html">Kenali Desa Wisata Bantaragung</a>
+        </div>
+        <img class="overview-photo" src="assets/images/ciboer-kartu.jpg" width="780" height="470" alt="" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="guide-section" id="panduan" aria-labelledby="guide-title">
+      <div class="container">
+        <div class="guide-intro">
+          <p class="eyebrow">Panduan berkunjung</p>
+          <h2 id="guide-title">Liburan enak, tempatnya tetap terjaga</h2>
+          <p>Pilih satu hal yang bisa kamu lakukan sebelum berangkat. Kebiasaan kecil bikin jalur, air, dan ruang bersama lebih nyaman buat pengunjung berikutnya.</p>
+        </div>
+        <ul class="row guide-list">
+          <li class="col-12 lg:col-4"><div class="guide-card"><span class="guide-icon"><svg class="icon" aria-hidden="true"><use href="#i-bottle"/></svg></span><div><h3>Isi botol sebelum berangkat</h3><p>Bawa botol isi ulang dan siapkan kantong buat bungkus makanan. Kalau belum ketemu tempat sampah, simpan dulu sampai pulang.</p></div></div></li>
+          <li class="col-12 lg:col-4"><div class="guide-card"><span class="guide-icon"><svg class="icon" aria-hidden="true"><use href="#i-trail"/></svg></span><div><h3>Ambil foto dari jalurnya</h3><p>Pakai jalur dan titik foto yang tersedia. Di kebun berundak, beri ruang supaya warga tetap leluasa bekerja.</p></div></div></li>
+          <li class="col-12 lg:col-4"><div class="guide-card"><span class="guide-icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span><div><h3>Jaga air tetap bersih</h3><p>Simpan sampah jauh dari tepi situ dan aliran curug. Kalau mau pakai sabun, gunakan kamar bilas yang disediakan.</p></div></div></li>
+        </ul>
+        <details class="category-tips"><summary>Pilih tips sesuai tempat</summary>
+          <fieldset><legend class="visually-hidden">Kategori tips</legend>
+            <label><input name="tip-category" type="radio" value="situ" checked> Situ</label>
+            <label><input name="tip-category" type="radio" value="bukit"> Bukit</label>
+            <label><input name="tip-category" type="radio" value="curug"> Curug</label>
+            <label><input name="tip-category" type="radio" value="terasering"> Terasering</label>
+            <label><input name="tip-category" type="radio" value="taman-kota"> Taman kota</label>
+          </fieldset>
+          <section class="tip-panel" data-tip-panel="situ"><h3><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg> Biar tepi situ tetap bersih</h3><ul><li>Simpan bungkus dan sisa makanan di tas.</li><li>Ikuti batas area yang ditandai pengelola.</li></ul><p>Sampah yang tercecer di tepian mudah terbawa ke air.</p></section>
+          <section class="tip-panel" data-tip-panel="bukit"><h3><svg class="icon" aria-hidden="true"><use href="#i-bukit"/></svg> Jaga jalur sampai turun</h3><ul><li>Ikuti jalur resmi dan bawa turun sampahmu.</li><li>Pasang tenda di area yang ditentukan jika kamu berkemah.</li></ul><p>Jalur pintas bisa mengikis tanah dan merusak tanaman.</p></section>
+          <section class="tip-panel" data-tip-panel="curug"><h3><svg class="icon" aria-hidden="true"><use href="#i-curug"/></svg> Bantu jaga aliran air</h3><ul><li>Ikuti jalur pengunjung dan bawa kembali bungkus makanan.</li><li>Gunakan sabun di kamar bilas jika tersedia.</li></ul><p>Air dari curug terus mengalir ke bagian hilir.</p></section>
+          <section class="tip-panel" data-tip-panel="terasering"><h3><svg class="icon" aria-hidden="true"><use href="#i-teras"/></svg> Foto dari jalur, beri ruang buat petani</h3><ul><li>Ambil foto dari titik yang tersedia.</li><li>Minta izin sebelum memasuki petak kebun atau memetik tanaman.</li></ul><p>Undakan yang kamu lihat adalah lahan kerja warga.</p></section>
+          <section class="tip-panel" data-tip-panel="taman-kota"><h3><svg class="icon" aria-hidden="true"><use href="#i-taman"/></svg> Sisakan ruang nyaman buat pengunjung berikutnya</h3><ul><li>Buang sisa jajan pada tempatnya.</li><li>Pakai jalur dan area bermain sesuai petunjuk.</li></ul><p>Banyak orang memakai ruang ini bergantian setiap hari.</p></section>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#beranda" aria-label="Jelajah Majalengka, kembali ke Beranda"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg></span><span>Jelajah <strong>Majalengka</strong></span></a>
+        <p>Jelajah Majalengka adalah bagian dari proyek EcoDigital for Environment.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#tentang">Tentang proyek</a>
+        <details class="credits"><summary>Sumber &amp; kredit foto</summary>
+          <ul>
+            <li><a href="https://majalengkakab.go.id/">Portal Pemkab Majalengka</a>, <a href="https://majalengkakab.go.id/wp-content/uploads/2024/08/Buku-Profil-tahun-2023-New.pdf">profil Kabupaten Majalengka</a>, <a href="https://sisparnas.kemenpar.go.id/p/25505">SISPARNAS</a>, <a href="https://jadesta.kemenpar.go.id/desa/57675">JADESTA</a>, dan <a href="https://jdih.majalengkakab.go.id/common/dokumen/Perda%202021_8%20Ripparkab%202021-2025_Salinan.pdf">dokumen pariwisata daerah</a>.</li>
+            <li>Foto Panyaweuyan oleh <a href="https://commons.wikimedia.org/wiki/File:Panyaweuyan,_Argapura,_Kabupaten_Majalengka.jpg">Rita Kusuma Dewi</a> dan <a href="https://commons.wikimedia.org/wiki/File:Terasering_panyaweuyan_argapura.jpg">Irhanz</a>. Foto Ciboer oleh <a href="https://commons.wikimedia.org/wiki/File:Pagi_Di_Ciboer_Chandra_Musliminnata.jpg">Masmusdjeprat</a>. Foto diperkecil dan dipotong sesuai tata letak. <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+            <li>Foto <a href="https://commons.wikimedia.org/wiki/File:Curugmaja.jpg">Curug Maja oleh Farshya</a>, ditampilkan dengan potongan sesuai tata letak. <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Alun-alun_majalengka_2014.png">Foto arsip Alun-Alun Majalengka (Aris riyanto, 2014)</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Foto ditampilkan dengan potongan sesuai tata letak.</li>
+          </ul>
+        </details>
+        <a href="#beranda">Kembali ke atas ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
